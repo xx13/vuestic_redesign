@@ -5,31 +5,180 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Vuestic Redesign</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <title>Vuestic Redesign Log</title>
+    <!-- import to sass -->
+    <style>
+        li {
+            margin-bottom: .5rem;
+        }
+
+    </style>
+    <!-- import to sass -->
 </head>
 
 <body>
     <div class="container">
-        <div class="ho">
-            <h1 class="display-2 mt-5"> Vuestic Redesign
-            </h1>
-            <h6>
-                September 18, 2018
-            </h6>
-            <p class="mt-4 text-secondary">
-                This document will containt short description about the upcoming redesign of Vuestic theme.
-            </p>
-            <h2 class="display-4 mt-5">
-                Goals &amp; Challenges
-            </h2>
-            <ul>
-                <li>Improve visual style by fixing text styles and elements (such as buttons)</li>
-                <li>New features for data rich components (tables, graphs, charts)</li>
-                <li>Introduce new approach by changing general layout and offer new components</li>
-        </div>
+        <!-- Header Title -->
+        <h1 class="mt-5">Vuestic Redesign Log
+        </h1>
+        <p class="mt-4 text-secondary">
+            Last update: September 20, 2018.<br>This document will contain all information about upcoming redesign of Vuestic theme.
+        </p>
+        <!-- Goals & Challenges -->
+        <h2 class="mt-5">
+            Goals &amp; Challenges
+        </h2>
+        <ul class="mt-3">
+            <li>Improve visual style by fixing text styles and elements (such as buttons)</li>
+            <li>Add new features for data rich components (tables, graphs, charts)</li>
+            <li>Introduce new approach by changing general layout and offer new components</li>
+            <li>Make the transition from current version to a new one very smooth</li>
+            <li>Deliver new designs to developers in a way not a single minor tweak is ignored</li>
+        </ul>
+        <ul class="mt-3 text-muted">
+            <li>Check font-weight 600 and 700</li>
+            <li>Small font style</li>
+            <li>Overall shadows and corners</li>
+            <li>General layout</li>
+            <li>Add navigation with contents on the left</li>
+        </ul>
 
-    </div>
-    <script src="./main.js"></script>
+        <!-- Completed Changes -->
+        <h2 class="mt-5">
+            Possible Components
+        </h2>
+        <p class="text-muted">
+            <ul>
+                <li>Modal views with tabs</li>
+                <li>Modal views with Save / Discard</li>
+                <li>Modal views with Back / Next</li>
+                <li>Data table with actions as icons</li>
+                <li>Data table with actions as text</li>
+                <li>Data table with different colors (labels, text)</li>
+                <li>Data tables with graphs</li>
+                <li>Data tables with trends ( &uarr; &darr; - )</li>
+                <li>Grid with different views (table view, cards)</li>
+                <li></li>
+                <li></li>
+            </ul>
+        </p>
+
+
+        <!-- Completed Changes -->
+        <h2 class="mt-5">
+            Completed Changes
+        </h2>
+        <p class="text-danger">
+            [Overview image goes here]
+        </p>
+
+        <!-- Buttons -->
+        <section class="mt-5">
+            <h4 class="text-danger">
+                Button Update
+            </h4>
+            <p>
+                Default button height changed to 2rem to match the input.
+            </p>
+            <img src="./img/buttons_size.png" class="img-fluid" alt="Buttons Specificaions">
+            <p class="text-danger">
+                [Update image with new Mini Buttons style]
+            </p>
+            <hr class="my-5">
+        </section>
+
+        <!-- Inputs -->
+        <section class="mt-4">
+            <h4 class="text-danger">
+                Inputs
+            </h4>
+            <p>
+                Inputs were improved taking in consideration three things: 1) optimize space usage; 2) increase contrast when mupltiple inputs are on the form; 3) add missing styles; 4) use rich Material Icons Library as the default source of icons.
+                <ul>
+                    <li>Reduced height allowed to save up to 10% space</li>
+                    <li>Light gray background makes a single input stand out more</li>
+                    <li>Thinner bottom border offers lighter &amp; cleaner style</li>
+                    <li>Consistent icons for inputs. I updated Vuestic icons pack to set default icons. Currently they belong to different sets (Ionic, FontAwesome).</li>
+                    <li>New styles added: w icons, masks, required inputs.</li>
+                </ul>
+            </p>
+            <hr class="my-5">
+        </section>
+
+        <!-- Input Labels -->
+        <section class="mt-4">
+            <h4>
+                Input Labels
+            </h4>
+            <div>
+                Input label style was adjusted as it took too much space. Right now it remains readable in a tiny size: <span class="v_label">you can check it out</span>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-6 col-12 text-left">
+                    <pre class="bg-dark text-secondary rounded">
+                       <code>
+    .old_label
+        font-size: .6rem
+        font-weight: 600
+        color: #4AE387
+        text-transform: uppercase
+        letter-spacing: 0
+                        </code>
+                    </pre>
+                </div>
+                <div class="col-md-6 col-12">
+                    <pre class="bg-dark text-white rounded">
+                       <code>
+    .new_label  
+        <span class="text-success">font-size: .5rem
+        font-weight: 700</span>
+        color: #4AE387
+        text-transform: uppercase
+        <span class="text-success">letter-spacing: 0.0375rem</span>
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <hr class="my-5">
+        </section>
+
+
+        <!-- Tabs -->
+        <section class="mt-4">
+            <h4>
+                Tabs
+            </h4>
+            <p>
+                Updated tabs style fits more lightboxes than presentations: it requires way less space than before.
+            </p>
+            <img src="img/tabs.png" class="img-fluid" alt="Tabs">
+            <hr class="my-5">
+        </section>
+
+        <!-- Checkboxes -->
+        <section class="mt-4">
+            <h4>
+                Checkboxes, Radio Buttons
+            </h4>
+            <p>
+                Marings were decreased, rounded corners added.
+            </p>
+            <img src="img/checkbox.png" class="img-fluid" alt="Checkboxes and radios">
+            <hr class="my-5">
+        </section>
+
+        <!-- Icons -->
+        <section class="mt-4">
+            <h4>
+                Icons
+            </h4>
+            <p>
+                Include Google Material Icons.
+            </p>
+            <hr class="my-5">
+        </section>
+        <script src="./main.js"></script>
 </body>
 
 </html>
