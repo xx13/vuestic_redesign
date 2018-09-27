@@ -5,30 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.min.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
     <title>Vuestic Redesign Log</title>
-    <!-- import to sass -->
-    <style>
-        li {
-            margin-bottom: .5rem;
-        }
-
-        .label_table {
-            font-size: 0.625rem;
-            letter-spacing: 0.0375rem;
-            color: #4ae387;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .label_input {
-            font-size: 8px;
-            color: #4ae387;
-            font-weight: 700;
-            text-transform: uppercase;
-        }
-
-    </style>
 </head>
 
 <body>
@@ -51,44 +30,63 @@
             <li>Deliver new designs to developers in a way not a single minor tweak is ignored</li>
         </ul>
         <ul class="mt-3 text-muted">
-            <li>Small font style</li>
-            <li>Overall shadows and corners</li>
-            <li>General layout</li>
-            <li>Add navigation with contents on the left</li>
+            <li>Filters</li>
+            <li>Step Wizard</li>
+            <li>Timeline</li>
+            <li>Cards</li>
+            <li>Overall shadows and corners (cards, sidebar)</li>
+            <li>Extra: Add navigation with contents on the left (bootstrap)</li>
         </ul>
 
-        <!-- Completed Changes -->
-        <h2 class="mt-5">
-            Possible Components
-        </h2>
-        <p class="text-muted">
-            <ul>
-                <li>Modal views with tabs</li>
-                <li>Modal views with Save / Discard</li>
-                <li>Modal views with Back / Next</li>
-                <li>Data tables with graph previews</li>
-            </ul>
-        </p>
 
         <!-- List of Contents -->
         <h2 class="mt-5">
-            Contests
+            Completed Changes
         </h2>
         <p>
             <ul>
-                <li>Buttons</li>
-                <li>Inputs</li>
-                <li>Tabs</li>
-                <li>Checkboxes, radio buttons</li>
-                <li>Icons</li>
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#inputs">Inputs</a></li>
+                <li><a href="#dropdown_selects">Dropdown selects</a></li>
+                <li><a href="#checkboxes">Checkboxes, radio buttons</a></li>
+                <li><a href="#icons">Icons</a></li>
+                <li><a href="#forms">Forms</a></li>
+                <li><a href="#modals">Modals</a></li>
+                <li><a href="#notifications">Notifications</a></li>
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#layout">Layout</a></li>
             </ul>
         </p>
 
+        <!-- Typography -->
+        <section class="mt-4" id="typography">
+            <h3>
+                Typography
+            </h3>
+            <p>
+                Let's reduce amount of font styles and use 2 only: 400 (regular) and 700 (bold) font weights.
+                <ul>
+                    <li>Headings updated</li>
+                    <li>Input label updated</li>
+                    <li>Table heading updated</li>
+                    <li>Small font style (0.875rem) introduced. It is used to display table data and extra info for inputs (errors, notes), mini buttons — default Bootstrap is EM based and doesn't meet out needs.</li>
+                </ul>
+                <img src="./img/headings.png" class="img-fluid mb-3" alt="Headings">
+            </p>
+
+            <p>
+              <small><a href="#top">Return to top</a></small>
+            </p>
+            <hr class="my-5">
+        </section>
+
+
         <!-- Buttons -->
-        <section class="mt-5">
-            <h4>
+        <section class="mt-5" id="buttons">
+            <h3>
                 Buttons
-            </h4>
+            </h3>
             <p>
                 The styles were re-worked and several new ones were introduced.
                 <ul>
@@ -100,40 +98,44 @@
                     <li>Button groups updated.</li>
                 </ul>
             </p>
+            <img src="./img/buttons.png" class="img-fluid mb-5" alt="Buttons">
             <img src="./img/buttons_compare.png" class="img-fluid mb-5" alt="Buttons Chart">
             <img src="./img/button_specs.png" class="img-fluid mb-5" alt="Buttons Specificaions">
             <img src="./img/buttons_colors.png" class="img-fluid mb-5" alt="Buttons Colors">
-            <h5>
+            <h4>
                 Button Groups
-            </h5>
+            </h4>
             <p>
                 Updated styles for button groups and inline selects. Can be used for pagination, table view select, etc.
             </p>
             <img src="./img/button_groups.png" class="img-fluid" alt="Button Groups">
+            <p>
+              <small><a href="#top">Return to top</a></small>
+            </p>
             <hr class="my-5">
         </section>
 
         <!-- Inputs -->
-        <section class="mt-4">
-            <h4>
+        <section class="mt-4" id="inputs">
+            <h3>
                 Inputs
-            </h4>
+            </h3>
             <p>
                 Inputs were improved taking in consideration three things: 1) optimize space usage; 2) increase contrast when mupltiple inputs are on the form; 3) add missing styles; 4) use rich Material Icons Library as the default source of icons.
                 <ul>
-                    <li>Reduced height allowed to save up to 10% space</li>
-                    <li>Light grey background makes a single input stand out more</li>
+                    <li>Reduced height to 2.375rem allowed to save up to 10% space</li>
+                    <li>Light grey background #f5f8f9 makes a single input stand out more</li>
                     <li>Thinner bottom border offers lighter &amp; cleaner style</li>
                     <li>Consistent icons for inputs. I updated Vuestic icons pack to set default icons. Currently they belong to different sets (Ionic, FontAwesome).</li>
                     <li>New styles added: w icons, masks, required inputs.</li>
                 </ul>
             </p>
             <img src="./img/inputs.png" class="img-fluid mb-4" alt="Inputs">
-            <h5>
+            <h4>
                 Input Labels
-            </h5>
+            </h4>
             <div>
-                Input label style was adjusted as it took too much space. Right now it remains readable in a tiny size: <span class="v_label">you can check it out</span>
+                Input label style was adjusted as it took too much space. Right now it remains readable in a tiny size: <span class="vuestic_label">you can check it out</span>
             </div>
             <div class="row mt-3">
                 <div class="col-md-6 col-12 text-left">
@@ -151,7 +153,7 @@
                 <div class="col-md-6 col-12">
                     <pre class="bg-dark text-white rounded">
                        <code>
-    .new_label  
+    .new_label
         <span class="text-success">font-size: 0.5rem
         font-weight: 700</span>
         color: #4AE387
@@ -161,41 +163,67 @@
                     </pre>
                 </div>
             </div>
+            <p>
+              <small><a href="#top">Return to top</a></small>
+            </p>
             <hr class="my-5">
         </section>
 
+        <!-- Dropdown Selects -->
+        <section class="mt-4" id="dropdown_selects">
+            <h3>
+                Dropdown Selects
+            </h3>
+            <p>
+                Dropdown select style was totally updated: swtiched from black version to light grey.
+            </p>
+            <img src="./img/selects.png" class="img-fluid mb-5" alt="Dropdown selects">
+            <p>
+              <small><a href="#top">Return to top</a></small>
+            </p>
+            <hr class="my-5">
+        </section>
 
         <!-- Tabs -->
-        <section class="mt-4">
-            <h4>
-                Tabs
-            </h4>
+        <section class="mt-4" id="forms">
+            <h3>
+                Organizing Forms: Tabs &amp; Groups
+            </h3>
             <p>
                 Updated tabs style fits more lightboxes than presentations: it requires way less space than before.
+                Group styles introduced.
             </p>
+            <img src="./img/form_groups.png" class="img-fluid mb-5" alt="Form groups">
             <img src="./img/tabs.png" class="img-fluid" alt="Tabs">
             <p class="text-danger">Btw there is a bug with a mobile version of Tabs right now. You can tap 'clear' and remove everything. We should fix it.</p>
             <img src="./img/tab_issue.png" class="img-fluid" alt="Tabs Issues">
+            <p>
+              <small><a href="#top">Return to top</a></small>
+            </p>
             <hr class="my-5">
         </section>
 
         <!-- Checkboxes -->
-        <section class="mt-4">
-            <h4>
+        <section class="mt-4" id="checkboxes">
+            <h3>
                 Checkboxes, Radio Buttons
-            </h4>
+            </h3>
             <p>
-                Marings were decreased, rounded corners added.
+                Maring was decreased to .5rem, rounded corners added.
             </p>
             <img src="./img/checkbox.png" class="img-fluid" alt="Checkboxes and radios">
+            <p>
+              <small><a href="#top">Return to top</a></small>
+            </p>
             <hr class="my-5">
+
         </section>
 
         <!-- Icons -->
-        <section class="mt-4">
-            <h4>
+        <section class="mt-4" id="icons">
+            <h3>
                 Icons
-            </h4>
+            </h3>
             <p>
                 Basic Vuestic icon pack was improved. It consists of icons that can be used in inputs, tables, etc. <br> We should also include Google Material Icons to Icons section.
             </p>
@@ -204,10 +232,10 @@
         </section>
 
         <!-- Tables -->
-        <section class="mt-4">
-            <h4>
+        <section class="mt-4" id="tables">
+            <h3>
                 Tables
-            </h4>
+            </h3>
             <p>
                 Tables is one of the most important parts of the dashboard. I suggest not only tweaking visual style, but also adding new features.
             </p>
@@ -218,50 +246,83 @@
                 <li>Default &amp; colored backgrounds updated.</li>
                 <li>Yellow and grey labels updated.</li>
                 <li>New type of graph included.</li>
+                <li>Custom labels added.</li>
+                <li>Different types of pagination.</li>
             </ul>
             <img src="./img/tables.png" class="img-fluid mb-5" alt="Tables">
             <p class="text-danger">
                 There is a bug with pagination. Columns ocasionally change widths and the content wiggles inside the table. Same issue with sortings.
             </p>
-            <hr class="my-5">
-        </section>
-
-        <!-- Typography -->
-        <section class="mt-4">
-            <h4>
-                Typography
-            </h4>
             <p>
-                Let's reduce amount of font styles and use 2 only: 400 (regular) and 700 (bold) font weights.<br> Adding small text makes sense as default Bootstrap is EM based and doesn't meet out needs.
-                <ul>
-                    <li>Input label updated</li>
-                    <li>Table heading updated</li>
-                </ul>
+              <small><a href="#top">Return to top</a></small>
             </p>
             <hr class="my-5">
         </section>
 
+
+
+
         <!-- Modals -->
-        <section class="mt-4">
-            <h4>
+        <section class="mt-4" id="modals">
+            <h3>
                 Modals
-            </h4>
-            <p class="text-danger">
-                [To be completed]
+            </h3>
+            <p>
+                Modal window rounded corners and shadow updated. <br>
+                Heading font weight updated.
+            </p>
+            <img src="./img/modals.png" class="img-fluid mb-5" alt="Modals">
+            <p>
+              <small><a href="#top">Return to top</a></small>
+            </p>
+            <hr class="my-5">
+        </section>
+
+        <!-- Notifications -->
+        <section class="mt-4" id="notifications">
+            <h3>
+                Notifications
+            </h3>
+            <p>
+                Colors, shadows, text styles were updated.<br>
+                Labels have the same style as in tables.
+            </p>
+            <img src="./img/notifications.png" class="img-fluid mb-5" alt="Notifications">
+            <p>
+              <small><a href="#top">Return to top</a></small>
+            </p>
+            <hr class="my-5">
+        </section>
+
+        <!-- Cards -->
+        <section class="mt-4" id="cards">
+            <h3>
+                Cards
+            </h3>
+            <p>
+                Rounded corners, new shadows and titles for different tipes of cards: widgets, breadcrumbs and UI cards.
+            </p>
+            <img src="./img/cards.png" class="img-fluid mb-5" alt="Cards">
+            <p>
+              <small><a href="#top">Return to top</a></small>
             </p>
             <hr class="my-5">
         </section>
 
         <!-- Layout -->
-        <section class="mt-4">
-            <h4>
+        <section class="mt-4" id="layout">
+            <h3>
                 Layout
-            </h4>
+            </h3>
             <p class="text-danger">
                 [To be completed]
             </p>
+            <p>
+              <small><a href="#top">Return to top</a></small>
+            </p>
             <hr class="my-5">
         </section>
+
         <script src="./main.js"></script>
 </body>
 
