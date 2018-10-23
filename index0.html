@@ -2,109 +2,80 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <title>Vuestic Redesign Log</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <title>Vuestic Redesign Log</title>
 </head>
 
 <body>
-  <div class="container">
-    <!-- Header Title -->
-    <h1 class="mt-5">Vuestic 2.0 Redesign Notes
-    </h1>
-    <p class="mt-4 text-secondary">
-      Last update: October 23, 2018.
-      <!-- Goals & Challenges -->
-      <h2 class="mt-5">
-        What Is This Page?
-      </h2>
-      <p>The purpose of this document is to pay attention to specific details to be sure they won't be lost when implementing. It's a complimentary guide for Zeplin source files.
-      </p>
+    <div class="container">
+        <!-- Header Title -->
+        <h1 class="mt-5">Vuestic Redesign Log
+        </h1>
+        <p class="mt-4 text-secondary">
+            Last update: October 2, 2018.<br>This document will contain all information about upcoming redesign of Vuestic theme.
+        </p>
+        <!-- Goals & Challenges -->
+        <h2 class="mt-5">
+            Goals &amp; Challenges
+        </h2>
+        <ul class="mt-3">
+            <li>Improve visual style by fixing text styles and elements (such as buttons)</li>
+            <li>Add new features for data rich components (tables, graphs, charts)</li>
+            <li>Introduce new approach by changing general layout and offer new components</li>
+            <li>Make the transition from current version to a new one very smooth</li>
+            <li>Deliver new designs to developers in a way not a single minor tweak is ignored</li>
+        </ul>
 
-      <!-- List of Contents -->
-      <h2 class="mt-5">
-        Completed Changes
-      </h2>
-      <p>
-        <ul class="mb-5">
-          <li><a href="#colors">Colors</a></li>
-          <li><a href="#typography">Typography</a></li>
-          <li>[Upcoming] Buttons</li>
-          <li>[Upcoming] Inputs</li>
-          <li>[Upcoming] Checkboxes, radio buttons</li>
-          <li>[Upcoming] Dropdown selects</li>
 
-<!--
+        <!-- List of Contents -->
+        <h2 class="mt-5">
+            Completed Changes
+        </h2>
+        <p>
+            <ul class="mb-5">
+                <li><a href="#typography">Typography</a></li>
+                <li><a href="#buttons">Buttons</a></li>
+                <li><a href="#inputs">Inputs</a></li>
+                <li><a href="#dropdown_selects">Dropdown selects</a></li>
+                <li><a href="#checkboxes">Checkboxes, radio buttons</a></li>
                 <li><a href="#icons">Icons</a></li>
                 <li><a href="#forms">Forms</a></li>
                 <li><a href="#modals">Modals</a></li>
                 <li><a href="#notifications">Notifications</a></li>
                 <li><a href="#cards">Cards</a></li>
                 <li><a href="#visual_style">Visual style</a></li>
-                <li><a href="#layout">Layout</a></li>-->
-        </ul>
-      </p>
-      <!-- Colors -->
-      <section class="mt-4" id="colors">
-        <h3 class="mb-4">
-          Colors
-        </h3>
-        <p class="mb-4">
-          <img src="./img/colors_main.png" class="d-block mb-2" alt="Colors">
-        Main colors are applied to texts, labels, secondary buttons, graphs, icons. The default 'black' text color is #34495E, but not #000.
+                <li><a href="#layout">Layout</a></li>
+            </ul>
         </p>
-        <p class="mb-4">
-          <img src="./img/colors_light.png" class="d-block mb-2" alt="Light colors">
-          Light colors can't be calculated using lighten function, as they all have different shifts in hue and saturation. So it makes sense to set them apart from main 6 colors.<br> They are used as background colors for notifications, table cells, text buttons. Dividers are light grey.
-        </p>
-        <p class="mb-4">
-          <img src="./img/colors_pale.png" class="d-block mb-2" alt="Pale color">
-          There is an extra Pale color that is a default color for even rows in tables.
-        </p>
-        <p class="mb-4">
-          <img src="./img/colors_gradients.png" class="d-block mb-2" alt="Main gradients">
-          Buttons have 6 gradients based on main colors.
-        </p>
-        <p class="mb-4">
-          <img src="./img/colors_modulation.png" class="d-block mb-2" alt="Color modulation">
-          On hover we apply lighten 15%, on pressed — darken 15% for every element(solid color or gradient). The only differene is text buttons.
-        </p>
-        <p class="mb-4">
-          <img src="./img/colors_text_button_hover.png" class="d-block mb-1" alt="Text buttons styles">
-          Text buttons have one of the light colors on hover, and 15% of the main color extra as an overlay for pressed state.
-        </p>
-        <p>
-          <small><a href="#top">Return to top</a></small>
-        </p>
-        <hr class="my-5">
-      </section>
 
-      <!-- Typography
-      <section class="mt-4" id="typography">
-        <h3>
-          Typography
-        </h3>
-        <p>
-          The amount of text font styles was drastically reduced, font weights were limited to 2: regular and bold.
-          <ul>
-            <li>Regular 16/24 and 14/20 are used for plain texts, inputs, dropdowns, links, etc.</li>
-            <li>Buttons and tabs share bold text style.</li>
-            <li>Labels, table headings, section titles, widget &amp; card titles share the same text style.</li>
-            <li>H1—H6 styles were updated as well.</li>
-          </ul>
-          <img src="./img/headings.png" class="img-fluid mb-3" alt="Headings">
-        </p>
-        <p>
-          <small><a href="#top">Return to top</a></small>
-        </p>
-        <hr class="my-5">
-      </section>
--->
+        <!-- Typography -->
+        <section class="mt-4" id="typography">
+            <h3>
+                Typography
+            </h3>
+            <p>
+                Let's reduce amount of font styles and use 2 only: 400 (regular) and 700 (bold) font weights.
+                <ul>
+                    <li>Headings updated</li>
+                    <li>Input label updated</li>
+                    <li>Table heading updated</li>
+                    <li>Small font style (0.875rem) introduced. It is used to display table data and extra info for inputs (errors, notes), mini buttons — default Bootstrap is EM based and doesn't meet out needs.</li>
+                </ul>
+                <img src="./img/headings.png" class="img-fluid mb-3" alt="Headings">
+            </p>
 
-      <!-- Buttons
+            <p>
+              <small><a href="#top">Return to top</a></small>
+            </p>
+            <hr class="my-5">
+        </section>
+
+
+        <!-- Buttons -->
         <section class="mt-5" id="buttons">
             <h3>
                 Buttons
@@ -136,9 +107,8 @@
             </p>
             <hr class="my-5">
         </section>
-        -->
 
-      <!-- Inputs
+        <!-- Inputs -->
         <section class="mt-4" id="inputs">
             <h3>
                 Inputs
@@ -191,9 +161,8 @@
             </p>
             <hr class="my-5">
         </section>
-        -->
 
-      <!-- Dropdown Selects
+        <!-- Dropdown Selects -->
         <section class="mt-4" id="dropdown_selects">
             <h3>
                 Dropdown Selects
@@ -207,9 +176,8 @@
             </p>
             <hr class="my-5">
         </section>
-        -->
 
-      <!-- Tabs
+        <!-- Tabs -->
         <section class="mt-4" id="forms">
             <h3>
                 Organizing Forms: Tabs &amp; Groups
@@ -227,9 +195,8 @@
             </p>
             <hr class="my-5">
         </section>
-        -->
 
-      <!-- Checkboxes
+        <!-- Checkboxes -->
         <section class="mt-4" id="checkboxes">
             <h3>
                 Checkboxes, Radio Buttons
@@ -242,10 +209,10 @@
               <small><a href="#top">Return to top</a></small>
             </p>
             <hr class="my-5">
-        </section>
-        -->
 
-      <!-- Icons
+        </section>
+
+        <!-- Icons -->
         <section class="mt-4" id="icons">
             <h3>
                 Icons
@@ -256,9 +223,8 @@
             <img src="./img/vuestic_icons.png" class="img-fluid" alt="Vuestic Icons">
             <hr class="my-5">
         </section>
-        -->
 
-      <!-- Tables
+        <!-- Tables -->
         <section class="mt-4" id="tables">
             <h3>
                 Tables
@@ -285,12 +251,11 @@
             </p>
             <hr class="my-5">
         </section>
-        -->
 
 
 
 
-      <!-- Modals
+        <!-- Modals -->
         <section class="mt-4" id="modals">
             <h3>
                 Modals
@@ -305,9 +270,8 @@
             </p>
             <hr class="my-5">
         </section>
-        -->
 
-      <!-- Notifications
+        <!-- Notifications -->
         <section class="mt-4" id="notifications">
             <h3>
                 Notifications
@@ -322,9 +286,8 @@
             </p>
             <hr class="my-5">
         </section>
-        -->
 
-      <!-- Cards
+        <!-- Cards -->
         <section class="mt-4" id="cards">
             <h3>
                 Cards
@@ -338,9 +301,8 @@
             </p>
             <hr class="my-5">
         </section>
-        -->
 
-      <!-- Visual Style
+        <!-- Visual Style -->
         <section class="mt-4" id="visual_style">
             <h3>
                 Visual Style
@@ -354,10 +316,9 @@
             </p>
             <hr class="my-5">
         </section>
-        -->
 
 
-      <!-- Layout
+        <!-- Layout -->
         <section class="mt-4" id="layout">
             <h3>
                 Layout
@@ -372,9 +333,8 @@
             </p>
             <hr class="my-5">
         </section>
-        -->
 
-      <script src="./main.js"></script>
+        <script src="./main.js"></script>
 </body>
 
 </html>
