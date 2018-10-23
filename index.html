@@ -31,11 +31,16 @@
       <p>
         <ul class="mb-5">
           <li><a href="#colors">Colors</a></li>
-          <li><a href="#typography">Typography<a/></li>
+          <li><a href="#typography">Typography<a /></li>
           <li><a href="#buttons">Buttons</a></li>
-          <li>[Upcoming] Inputs</li>
-          <li>[Upcoming] Checkboxes, radio buttons</li>
-          <li>[Upcoming] Dropdown selects</li>
+          <li><a href="#inputs">Inputs</a></li>
+          <li><a href="#dropdown_selects">Dropdown selects</a></li>
+          <li class="text-muted">[Upcoming] Tabs</li>
+          <li class="text-muted">[Upcoming] Tables</li>
+          <li class="text-muted">[Upcoming] Cards & Widgets</li>
+          <li class="text-muted">[Upcoming] Modals</li>
+          <li class="text-muted">[Upcoming] Icons</li>
+          <li class="text-muted">[Upcoming] Notifications</li>
         </ul>
       </p>
       <!-- Colors -->
@@ -45,11 +50,12 @@
         </h3>
         <p class="mb-4">
           <img src="./img/colors_main.png" class="img-fluid d-block mb-2" alt="Colors">
-        Main colors are applied to texts, labels, secondary buttons, graphs, icons. The default 'black' text color is #34495E, but not #000.
+          Main colors are applied to texts, labels, secondary buttons, graphs, icons. The default 'black' text color is #34495E, but not #000.
         </p>
         <p class="mb-4">
           <img src="./img/colors_light.png" class="img-fluid d-block mb-2" alt="Light colors">
-          Light colors can't be calculated using lighten function, as they all have different shifts in hue and saturation. So it makes sense to set them apart from main 6 colors.<br> They are used as background colors for notifications, table cells, text buttons. Dividers are light grey.
+          Light colors can't be calculated using lighten function, as they all have different shifts in hue and saturation. So it makes sense to set them apart from main 6 colors.<br> They are used as background colors for notifications, table
+          cells, text buttons. Dividers are light grey.
         </p>
         <p class="mb-4">
           <img src="./img/colors_pale.png" class="img-fluid d-block mb-2" alt="Pale color">
@@ -97,102 +103,96 @@
 
 
       <!-- Buttons  -->
-        <section class="mt-5" id="buttons">
-            <h3 class="mb-4">
-                Buttons
-            </h3>
-            <p class="mb-5">
-              <img src="./img/button_label_alignment.png" class="img-fluid d-block mb-3" alt="Button label vertical alignment">
-              Labels in large and default buttons are shifted torwards top. Small button labels are vertically centered. <span class="text-danger">The only difference — small secondary button.</span>
-            </p>
-            <p class="mb-5">
-              <img src="./img/button_icon_alignment.png" class="img-fluid d-block mb-3" alt="Button icon alignment">
-              Right icon's (dropdown arrow) padding differs from the left side icon's one.
-            </p>
-            <p class="mb-5">
-              <img src="./img/button_group_alignment.png" class="img-fluid d-block mb-3" alt="Button group alignment">
-              Far left and right paddings are larger than the others.
-            </p>
-            <p class="mb-5">
-              <img src="./img/button_text.png" class="img-fluid d-block mb-3" alt="Text buttons">
-              Text button hover style differs from links behavior. Pressed button background will add extra 15% of the original color to its current background color value (e.g. 15% opacity Green overlay to a Light Green background for a Green text button).
-            </p>
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
+      <section class="mt-5" id="buttons">
+        <h3 class="mb-4">
+          Buttons
+        </h3>
+        <p class="mb-5">
+          <img src="./img/button_label_alignment.png" class="img-fluid d-block mb-3" alt="Button label vertical alignment">
+          Labels in large and default buttons are shifted torwards top. Small button labels are vertically centered. <span class="text-danger">The only difference — small secondary button.</span>
+        </p>
+        <p class="mb-5">
+          <img src="./img/button_icon_alignment.png" class="img-fluid d-block mb-3" alt="Button icon alignment">
+          Right icon's (dropdown arrow) padding differs from the left side icon's one.
+        </p>
+        <p class="mb-5">
+          <img src="./img/button_group_alignment.png" class="img-fluid d-block mb-3" alt="Button group alignment">
+          Far left and right paddings are larger than the others.
+        </p>
+        <p class="mb-4">
+          <img src="./img/button_text.png" class="img-fluid d-block mb-3" alt="Text buttons">
+          Text button hover style differs from links behavior. Pressed button background will add extra 15% of the original color to its current background color value (e.g. 15% opacity Green overlay to a Light Green background for a Green text
+          button).
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr class="my-5">
+      </section>
 
-      <!-- Inputs
-        <section class="mt-4" id="inputs">
-            <h3>
-                Inputs
-            </h3>
-            <p>
-                Inputs were improved taking in consideration three things: 1) optimize space usage; 2) increase contrast when mupltiple inputs are on the form; 3) add missing styles; 4) use rich Material Icons Library as the default source of icons.
-                <ul>
-                    <li>Reduced height to 2.375rem allowed to save up to 10% space</li>
-                    <li>Light grey background #f5f8f9 makes a single input stand out more</li>
-                    <li>Thinner bottom border offers lighter &amp; cleaner style</li>
-                    <li>Consistent icons for inputs. I updated Vuestic icons pack to set default icons. Currently they belong to different sets (Ionic, FontAwesome).</li>
-                    <li>New styles added: w icons, masks, required inputs.</li>
-                </ul>
-            </p>
-            <img src="./img/inputs.png" class="img-fluid mb-4" alt="Inputs">
-            <h4>
-                Input Labels
-            </h4>
-            <div>
-                Input label style was adjusted as it took too much space. Right now it remains readable in a tiny size: <span class="vuestic_label">you can check it out</span>
-            </div>
-            <div class="row mt-3">
-                <div class="col-md-6 col-12 text-left">
-                    <pre class="bg-dark text-secondary rounded">
-                       <code>
-    .old_label
-        font-size: 0.6rem
-        font-weight: 600
-        color: #4AE387
-        text-transform: uppercase
-        letter-spacing: 0
-                        </code>
-                    </pre>
-                </div>
-                <div class="col-md-6 col-12">
-                    <pre class="bg-dark text-white rounded">
-                       <code>
-    .new_label
-        <span class="text-success">font-size: 0.5rem
-        font-weight: 700</span>
-        color: #4AE387
-        text-transform: uppercase
-        <span class="text-success">letter-spacing: 0.0375rem</span>
-                        </code>
-                    </pre>
-                </div>
-            </div>
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
-        -->
+      <!-- Inputs  -->
+      <section class="mt-4" id="inputs">
+        <h3 class="mb-4">
+          Inputs
+        </h3>
+        <p class="mb-5">
+          <img src="./img/input_paddings.png" class="img-fluid d-block mb-3" alt="Input paddings">
+          Placeholder position is slightly shifted torwards top border and is not vertically centered.
+        </p>
+        <p class="mb-5">
+          <img src="./img/input_label.png" class="img-fluid d-block mb-3" alt="Input label">
+          We should consider an alernative filled input layout — without a label and a value not changing its position (ex placeholder). It should be a default layout for Search.
+        </p>
+        <p class="mb-4">
+          <img src="./img/input_label_style.png" class="img-fluid d-block mb-3" alt="Input label style">
+          Input labels share the same style as widget titles, table headings, sections titles and labels.
+        </p>
+        <p class="mb-5">
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr class="my-5">
+      </section>
 
-      <!-- Dropdown Selects
-        <section class="mt-4" id="dropdown_selects">
-            <h3>
-                Dropdown Selects
-            </h3>
-            <p>
-                Dropdown select style was totally updated: swtiched from black version to light grey.
-            </p>
-            <img src="./img/selects.png" class="img-fluid mb-5" alt="Dropdown selects">
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
-        -->
+
+      <!-- Dropdown Selects  -->
+      <section class="mt-4" id="dropdown_selects">
+        <h3 class="mb-4">
+          Dropdown Selects
+        </h3>
+        <p class="mb-5">
+          <img src="./img/dropdown_simple.png" class="img-fluid d-block mb-3" alt="Simple dropdown">
+          Selected item is green, so is the hover style of an element. There are no checks on the right for a single choice dropdowns.
+        </p>
+        <p class="mb-5">
+          <img src="./img/dropdown_multiple.png" class="img-fluid d-block mb-3" alt="Multiple choice dropdown">
+          Selected items on a multiple choice dropdown have checks on the right. We might offer 2 types of displaying values: '# selected' or list picked items separated with commas.
+        </p>
+        <p class="mb-5">
+          <img src="./img/dropdown_icons.png" class="img-fluid d-block mb-3" alt="Dropdown icons">
+          Select option might have an icon. By default it's blue, on mouse over and when selected they turn green.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr class="my-5">
+      </section>
+
+
+      <!-- Checkboxes
+          <section class="mt-4" id="checkboxes">
+              <h3>
+                  Checkboxes, Radio Buttons
+              </h3>
+              <p>
+                  Maring was decreased to .5rem, rounded corners added.
+              </p>
+              <img src="./img/checkbox.png" class="img-fluid" alt="Checkboxes and radios">
+              <p>
+                <small><a href="#top">Return to top</a></small>
+              </p>
+              <hr class="my-5">
+          </section>
+-->
 
       <!-- Tabs
         <section class="mt-4" id="forms">
@@ -214,21 +214,7 @@
         </section>
         -->
 
-      <!-- Checkboxes
-        <section class="mt-4" id="checkboxes">
-            <h3>
-                Checkboxes, Radio Buttons
-            </h3>
-            <p>
-                Maring was decreased to .5rem, rounded corners added.
-            </p>
-            <img src="./img/checkbox.png" class="img-fluid" alt="Checkboxes and radios">
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
-        -->
+
 
       <!-- Icons
         <section class="mt-4" id="icons">
