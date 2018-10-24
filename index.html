@@ -35,8 +35,9 @@
           <li><a href="#buttons">Buttons</a></li>
           <li><a href="#inputs">Inputs</a></li>
           <li><a href="#dropdown_selects">Dropdown selects</a></li>
-          <li class="text-muted">[Upcoming] Checkboxes, radio buttons</li>
-          <li class="text-muted">[Upcoming] Tabs</li>
+          <li><a href="#checkboxes">Checkboxes, radio buttons</a></li>
+          <li><a href="#tabs">Tabs</a></li>
+          <li><a href="#forms">Forms</a></li>
           <li class="text-muted">[Upcoming] Tables</li>
           <li class="text-muted">[Upcoming] Cards & widgets</li>
           <li class="text-muted">[Upcoming] Modals</li>
@@ -46,7 +47,7 @@
       </p>
       <!-- Colors -->
       <section class="mt-4" id="colors">
-        <h3 class="mb-4">
+        <h3>
           Colors
         </h3>
         <p class="mb-4">
@@ -82,7 +83,7 @@
 
       <!-- Typography -->
       <section class="mt-4" id="typography">
-        <h3 class="mb-4">
+        <h3>
           Typography
         </h3>
         <p>
@@ -105,7 +106,7 @@
 
       <!-- Buttons  -->
       <section class="mt-5" id="buttons">
-        <h3 class="mb-4">
+        <h3>
           Buttons
         </h3>
         <p class="mb-5">
@@ -133,7 +134,7 @@
 
       <!-- Inputs  -->
       <section class="mt-4" id="inputs">
-        <h3 class="mb-4">
+        <h3>
           Inputs
         </h3>
         <p class="mb-5">
@@ -157,7 +158,7 @@
 
       <!-- Dropdown Selects  -->
       <section class="mt-4" id="dropdown_selects">
-        <h3 class="mb-4">
+        <h3>
           Dropdown Selects
         </h3>
         <p class="mb-5">
@@ -168,7 +169,7 @@
           <img src="./img/dropdown_multiple.png" class="img-fluid d-block mb-3" alt="Multiple choice dropdown">
           Selected items on a multiple choice dropdown have checks on the right. We might offer 2 types of displaying values: '# selected' or list picked items separated with commas.
         </p>
-        <p class="mb-5">
+        <p class="mb-4">
           <img src="./img/dropdown_icons.png" class="img-fluid d-block mb-3" alt="Dropdown icons">
           Select option might have an icon. By default it's blue, on mouse over and when selected they turn green.
         </p>
@@ -179,42 +180,76 @@
       </section>
 
 
-      <!-- Checkboxes
+      <!-- Checkboxes  -->
           <section class="mt-4" id="checkboxes">
               <h3>
                   Checkboxes, Radio Buttons
               </h3>
-              <p>
-                  Maring was decreased to .5rem, rounded corners added.
+              <p class="mb-5">
+                <img src="./img/checkbox_basic.png" class="img-fluid d-block mb-3" alt="Basic checkboxes and radio buttons">
+                Checkboxes have rounded corners.
               </p>
-              <img src="./img/checkbox.png" class="img-fluid" alt="Checkboxes and radios">
+              <p class="mb-5">
+                <img src="./img/checkbox_label.png" class="img-fluid d-block mb-3" alt="Checkbox label">
+                There are 2 options for inline selects: with and without a label.
+              </p>
+              <p class="mb-4">
+                <img src="./img/checkbox_label_alignment.png" class="img-fluid d-block mb-3" alt="Inline select alignment">
+                We should keep that in mind when building actions &amp; settings blocks like the ones for tables.
+              </p>
               <p>
                 <small><a href="#top">Return to top</a></small>
               </p>
               <hr class="my-5">
           </section>
--->
 
-      <!-- Tabs
-        <section class="mt-4" id="forms">
+
+      <!-- Tabs  -->
+        <section class="mt-4" id="tabs">
             <h3>
-                Organizing Forms: Tabs &amp; Groups
+                Tabs
             </h3>
-            <p>
-                Updated tabs style fits more lightboxes than presentations: it requires way less space than before.
-                Group styles introduced.
+            <p class="mb-4">
+              <img src="./img/tabs.png" class="img-fluid d-block mb-3" alt="Tabs">
+              Tabs are used to split large chunks of data/content into several simple screens. It works perfectly for forms. Tabs are centered with 40px margins between them. It's a bold text style with main black color for active and hover state, grey for inactive.
             </p>
-            <img src="./img/form_groups.png" class="img-fluid mb-5" alt="Form groups">
-            <img src="./img/tabs.png" class="img-fluid" alt="Tabs">
-            <p class="text-danger">Btw there is a bug with a mobile version of Tabs right now. You can tap 'clear' and remove everything. We should fix it.</p>
-            <img src="./img/tab_issue.png" class="img-fluid" alt="Tabs Issues">
             <p>
               <small><a href="#top">Return to top</a></small>
             </p>
             <hr class="my-5">
         </section>
-        -->
 
+
+        <!-- Forms  -->
+          <section class="mt-4" id="forms">
+              <h3>
+                  Forms
+              </h3>
+              <p class="mb-5">
+                <img src="./img/form_full_width.png" class="img-fluid d-block mb-3" alt="Full width form">
+                There are 3 main layouts for forms. The first on is the full width layout. Inputs take the entire space except for 24px margins on the sides.
+              </p>
+              <p class="mb-5">
+                <img src="./img/form_centered.png" class="img-fluid d-block mb-3" alt="Centered form">
+                For fewer inputs and large modal/widgets, we can offer a centered layout. In this case we can setup a min-width around 400px and center the form horizontally.
+              </p>
+              <p class="mb-5">
+                <img src="./img/form_two_columns.png" class="img-fluid d-block mb-3" alt="Two columns form">
+                For larger amount of inputs we can offer a 2 columns form layout.
+              </p>
+              <p class="mb-5">
+                <img src="./img/form_groups.png" class="img-fluid d-block mb-3" alt="Form groups">
+                Form groups is the other way to organize form elements.
+              </p>
+              <p class="mb-4">
+                <img src="./img/form_complex.png" class="img-fluid d-block mb-3" alt="Complex form">
+                Complex form may combine several solutions.
+              </p>
+              <p>
+                <small><a href="#top">Return to top</a></small>
+              </p>
+              <hr class="my-5">
+          </section>
 
 
       <!-- Icons
