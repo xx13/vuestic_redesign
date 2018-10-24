@@ -12,6 +12,7 @@
 
 <body>
   <div class="container">
+
     <!-- Header Title -->
     <h1 class="mt-5">Vuestic 2.0 Redesign Notes
     </h1>
@@ -38,15 +39,26 @@
           <li><a href="#checkboxes">Checkboxes, radio buttons</a></li>
           <li><a href="#tabs">Tabs</a></li>
           <li><a href="#forms">Forms</a></li>
-          <li class="text-muted">[Upcoming] Tables</li>
-          <li class="text-muted">[Upcoming] Cards & widgets</li>
-          <li class="text-muted">[Upcoming] Modals</li>
-          <li class="text-muted">[Upcoming] Icons</li>
-          <li class="text-muted">[Upcoming] Notifications</li>
+          <li><a href="#cards">Cards & widgets</a></li>
+          <li><a href="#modals">Modals</a></li>
+          <li><a href="#icons">Icons</a></li>
+          <li><a href="#tables">Tables</a></li>
+          <li><a href="#notifications">Notifications</a></li>
+          <li class="text-muted">[Upcoming] Progress Bars</li>
+          <li class="text-muted">[Upcoming] Tree view</li>
+          <li class="text-muted">[Upcoming] Date pickers</li>
+          <li class="text-muted">[Upcoming] Color pickers</li>
+          <li class="text-muted">[Upcoming] Accordeon</li>
+          <li class="text-muted">[Upcoming] Timeline</li>
+          <li class="text-muted">[Upcoming] File uploaders</li>
+          <li class="text-muted">[Upcoming] Tags</li>
+          <li class="text-muted">[Upcoming] Wizard</li>
         </ul>
       </p>
+      <hr>
+
       <!-- Colors -->
-      <section class="mt-4" id="colors">
+      <section id="colors">
         <h3>
           Colors
         </h3>
@@ -78,11 +90,11 @@
         <p>
           <small><a href="#top">Return to top</a></small>
         </p>
-        <hr class="my-5">
+        <hr>
       </section>
 
       <!-- Typography -->
-      <section class="mt-4" id="typography">
+      <section id="typography">
         <h3>
           Typography
         </h3>
@@ -100,9 +112,8 @@
         <p>
           <small><a href="#top">Return to top</a></small>
         </p>
-        <hr class="my-5">
+        <hr>
       </section>
-
 
       <!-- Buttons  -->
       <section class="mt-5" id="buttons">
@@ -129,11 +140,11 @@
         <p>
           <small><a href="#top">Return to top</a></small>
         </p>
-        <hr class="my-5">
+        <hr>
       </section>
 
       <!-- Inputs  -->
-      <section class="mt-4" id="inputs">
+      <section id="inputs">
         <h3>
           Inputs
         </h3>
@@ -152,12 +163,11 @@
         <p class="mb-5">
           <small><a href="#top">Return to top</a></small>
         </p>
-        <hr class="my-5">
+        <hr>
       </section>
 
-
       <!-- Dropdown Selects  -->
-      <section class="mt-4" id="dropdown_selects">
+      <section id="dropdown_selects">
         <h3>
           Dropdown Selects
         </h3>
@@ -176,210 +186,194 @@
         <p>
           <small><a href="#top">Return to top</a></small>
         </p>
-        <hr class="my-5">
+        <hr>
+      </section>
+
+      <!-- Checkboxes  -->
+      <section id="checkboxes">
+        <h3>
+          Checkboxes, Radio Buttons
+        </h3>
+        <p class="mb-5">
+          <img src="./img/checkbox_basic.png" class="img-fluid d-block mb-3" alt="Basic checkboxes and radio buttons">
+          Checkboxes have rounded corners.
+        </p>
+        <p class="mb-5">
+          <img src="./img/checkbox_label.png" class="img-fluid d-block mb-3" alt="Checkbox label">
+          There are 2 options for inline selects: with and without a label.
+        </p>
+        <p class="mb-4">
+          <img src="./img/checkbox_label_alignment.png" class="img-fluid d-block mb-3" alt="Inline select alignment">
+          We should keep that in mind when building actions &amp; settings blocks like the ones for tables.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Tabs  -->
+      <section id="tabs">
+        <h3>
+          Tabs
+        </h3>
+        <p class="mb-4">
+          <img src="./img/tabs.png" class="img-fluid d-block mb-3" alt="Tabs">
+          Tabs are used to split large chunks of data/content into several simple screens. It works perfectly for forms. Tabs are centered with 40px margins between them. It's a bold text style with main black color for active and hover state, grey
+          for inactive.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Forms  -->
+      <section id="forms">
+        <h3>
+          Forms
+        </h3>
+        <p class="mb-5">
+          <img src="./img/form_full_width.png" class="img-fluid d-block mb-3" alt="Full width form">
+          There are 3 main layouts for forms. The first on is the full width layout. Inputs take the entire space except for 24px margins on the sides.
+        </p>
+        <p class="mb-5">
+          <img src="./img/form_centered.png" class="img-fluid d-block mb-3" alt="Centered form">
+          For fewer inputs and large modal/widgets, we can offer a centered layout. In this case we can setup a min-width around 400px and center the form horizontally.
+        </p>
+        <p class="mb-5">
+          <img src="./img/form_two_columns.png" class="img-fluid d-block mb-3" alt="Two columns form">
+          For larger amount of inputs we can offer a 2 columns form layout.
+        </p>
+        <p class="mb-5">
+          <img src="./img/form_groups.png" class="img-fluid d-block mb-3" alt="Form groups">
+          Form groups is the other way to organize form elements.
+        </p>
+        <p class="mb-4">
+          <img src="./img/form_complex.png" class="img-fluid d-block mb-3" alt="Complex form">
+          Complex form may combine several solutions.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Cards & Widgets  -->
+      <section id="cards">
+        <h3>
+          Cards &amp; Widgets
+        </h3>
+        <p class="mb-5">
+          Cards &amp; widgets have much in common so we'll treat everything as <b>cards</b>. Though widgets are more about page structure, and cards are about content presentation.
+        </p>
+        <p class="mb-5">
+          <img src="./img/card_structure.png" class="img-fluid d-block mb-3" alt="Card with actions">
+          Cards share the same paddings and header structure.
+        </p>
+        <p class="mb-5">
+          <img src="./img/card_header.png" class="img-fluid d-block mb-3" alt="Card with actions">
+          A card <b>might</b> have a header which <b>might</b> contain an action/actions in the upper right corner as icon/text button/button mini. Header height is 48px.
+        </p>
+        <p class="mb-4">
+          <img src="./img/card_colors.png" class="img-fluid d-block mb-3" alt="Colorful card headers">
+          Cards might have different header styles. The default one is a blue label without any decorations. Offering several alternative solutions might be a useful feature. Green style has a blue label.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
+
+      <!-- Modals  -->
+      <section id="modals">
+        <h3>
+          Modals
+        </h3>
+        <p class="mb-5">
+          <img src="./img/modal_centered.png" class="img-fluid d-block mb-3" alt="Modal with centered actions">
+          Modals have rounded corners and 60% black overlay as a background. We can offer several options for actions. Centered actions with a primary choice as a primary button and a secondary choice as a text button for Yes/No dialogs.
+        </p>
+        <p class="mb-5">
+          <img src="./img/modal_sides.png" class="img-fluid d-block mb-3" alt="Modal with actions on the sides">
+          The other layout is with actions aligned to the different sides of the form. This works well for Next/Previous forms and any kind of wizards.
+        </p>
+        <p class="mb-4">
+          <img src="./img/modal_close.png" class="img-fluid d-block mb-3" alt="Modal with close icon">
+          Modals <b>might</b> have an action as a button/icon in the upper right corner. Anyways the modal should be closed by clicking anywhere outside it.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
       </section>
 
 
-      <!-- Checkboxes  -->
-          <section class="mt-4" id="checkboxes">
-              <h3>
-                  Checkboxes, Radio Buttons
-              </h3>
-              <p class="mb-5">
-                <img src="./img/checkbox_basic.png" class="img-fluid d-block mb-3" alt="Basic checkboxes and radio buttons">
-                Checkboxes have rounded corners.
-              </p>
-              <p class="mb-5">
-                <img src="./img/checkbox_label.png" class="img-fluid d-block mb-3" alt="Checkbox label">
-                There are 2 options for inline selects: with and without a label.
-              </p>
-              <p class="mb-4">
-                <img src="./img/checkbox_label_alignment.png" class="img-fluid d-block mb-3" alt="Inline select alignment">
-                We should keep that in mind when building actions &amp; settings blocks like the ones for tables.
-              </p>
-              <p>
-                <small><a href="#top">Return to top</a></small>
-              </p>
-              <hr class="my-5">
-          </section>
+      <!-- Icons  -->
+      <section id="icons">
+        <h3>
+          Icons
+        </h3>
+        <p class="mb-4">
+          <img src="./img/icons.png" class="img-fluid d-block mb-3" alt="Custom icons">
+          There are few custom icons that are widely used through the theme. Vuestic 2.0 will be based on Material Outlined icons to offer a wide range of customization to users.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
 
 
-      <!-- Tabs  -->
-        <section class="mt-4" id="tabs">
-            <h3>
-                Tabs
-            </h3>
-            <p class="mb-4">
-              <img src="./img/tabs.png" class="img-fluid d-block mb-3" alt="Tabs">
-              Tabs are used to split large chunks of data/content into several simple screens. It works perfectly for forms. Tabs are centered with 40px margins between them. It's a bold text style with main black color for active and hover state, grey for inactive.
-            </p>
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
+      <!-- Tables  -->
+      <section id="tables">
+        <h3>
+          Tables
+        </h3>
+        <p class="mb-5">
+          <img src="./img/table_labels.png" class="img-fluid d-block mb-3" alt="Table labels">
+          Table might have 2 types of labels: colorful circles on text labels. Rows/cells might have colorful backgrounds.
+        </p>
+        <p class="mb-5">
+          <img src="./img/table_actions.png" class="img-fluid d-block mb-3" alt="Table actions">
+          Inline actions might be links or buttons. They might be display permanently or shown on mouse over event.
+        </p>
+        <p class="mb-5">
+          <img src="./img/table_headings.png" class="img-fluid d-block mb-3" alt="Table headings">
+          Table headings share the same style as input labels, card titles, etc. They are green if the column is sortable, in other case the label has a default black color.
+        </p>
+        <p class="mb-5">
+          <img src="./img/table_navigation.png" class="img-fluid d-block mb-3" alt="Table pagination">
+          We can offer different types of navigation: pagination / with controls / with current page input, infinite loader, button 'Show more'.
+        </p>
+        <p class="mb-5">
+          <img src="./img/table_change_column_width.png" class="img-fluid d-block mb-3" alt="Chane column width">
+          Here is the way we can offer users to change column width manually by draggin the pins.
+        </p>
+        <p class="mb-4">
+          <img src="./img/table_empty.png" class="img-fluid d-block mb-3" alt="Empty table">
+          Let's take care of situation, if there is no data to display. The message will be vertically centered inside the table, bottom margin not ignored.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
 
-
-        <!-- Forms  -->
-          <section class="mt-4" id="forms">
-              <h3>
-                  Forms
-              </h3>
-              <p class="mb-5">
-                <img src="./img/form_full_width.png" class="img-fluid d-block mb-3" alt="Full width form">
-                There are 3 main layouts for forms. The first on is the full width layout. Inputs take the entire space except for 24px margins on the sides.
-              </p>
-              <p class="mb-5">
-                <img src="./img/form_centered.png" class="img-fluid d-block mb-3" alt="Centered form">
-                For fewer inputs and large modal/widgets, we can offer a centered layout. In this case we can setup a min-width around 400px and center the form horizontally.
-              </p>
-              <p class="mb-5">
-                <img src="./img/form_two_columns.png" class="img-fluid d-block mb-3" alt="Two columns form">
-                For larger amount of inputs we can offer a 2 columns form layout.
-              </p>
-              <p class="mb-5">
-                <img src="./img/form_groups.png" class="img-fluid d-block mb-3" alt="Form groups">
-                Form groups is the other way to organize form elements.
-              </p>
-              <p class="mb-4">
-                <img src="./img/form_complex.png" class="img-fluid d-block mb-3" alt="Complex form">
-                Complex form may combine several solutions.
-              </p>
-              <p>
-                <small><a href="#top">Return to top</a></small>
-              </p>
-              <hr class="my-5">
-          </section>
-
-
-      <!-- Icons
-        <section class="mt-4" id="icons">
-            <h3>
-                Icons
-            </h3>
-            <p>
-                Basic Vuestic icon pack was improved. It consists of icons that can be used in inputs, tables, etc. <br> We should also include Google Material Icons to Icons section.
-            </p>
-            <img src="./img/vuestic_icons.png" class="img-fluid" alt="Vuestic Icons">
-            <hr class="my-5">
-        </section>
-        -->
-
-      <!-- Tables
-        <section class="mt-4" id="tables">
-            <h3>
-                Tables
-            </h3>
-            <p>
-                Tables is one of the most important parts of the dashboard. I suggest not only tweaking visual style, but also adding new features.
-            </p>
-            <ul>
-                <li>Column headings updated (they differ from input labels).</li>
-                <li>Main font size reduced.</li>
-                <li>Actions as text and icons.</li>
-                <li>Default &amp; colored backgrounds updated.</li>
-                <li>Labels colors updated.</li>
-                <li>New type of graph included.</li>
-                <li>Custom labels added.</li>
-                <li>Different types of pagination.</li>
-            </ul>
-            <img src="./img/tables.png" class="img-fluid mb-5" alt="Tables">
-            <p class="text-danger">
-                There is a bug with pagination. Columns ocasionally change widths and the content wiggles inside the table. Same issue with sortings.
-            </p>
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
-        -->
-
-
-
-
-      <!-- Modals
-        <section class="mt-4" id="modals">
-            <h3>
-                Modals
-            </h3>
-            <p>
-                Modal window rounded corners and shadow updated. <br>
-                Heading style totally re-worked.
-            </p>
-            <img src="./img/modals.png" class="img-fluid mb-5" alt="Modals">
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
-        -->
-
-      <!-- Notifications
-        <section class="mt-4" id="notifications">
-            <h3>
-                Notifications
-            </h3>
-            <p>
-                Colors, shadows, text styles were updated.<br>
-                Labels have the same style as in tables.
-            </p>
-            <img src="./img/notifications.png" class="img-fluid mb-5" alt="Notifications">
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
-        -->
-
-      <!-- Cards
-        <section class="mt-4" id="cards">
-            <h3>
-                Cards
-            </h3>
-            <p>
-                Rounded corners, new shadows and titles for different tipes of cards: widgets, breadcrumbs and UI cards.
-            </p>
-            <img src="./img/cards.png" class="img-fluid mb-5" alt="Cards">
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
-        -->
-
-      <!-- Visual Style
-        <section class="mt-4" id="visual_style">
-            <h3>
-                Visual Style
-            </h3>
-            <p>
-                Reworked. Fresh. Catchy.
-            </p>
-            <img src="./img/visual_style.png" class="img-fluid mb-3" alt="Visual style">
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
-        -->
-
-
-      <!-- Layout
-        <section class="mt-4" id="layout">
-            <h3>
-                Layout
-            </h3>
-            <p>
-                Layout was totally re-worked. Right now it's more feature reach, content focused and stylish AF. All widgets will be designed with the focus on all features Vuestic offers.
-            </p>
-            <img src="./img/layout_dashboard.png" class="mb-5" alt="Dashboard">
-            <img src="./img/layout_inner.png" class="mb-5" alt="Inner Page">
-            <p>
-              <small><a href="#top">Return to top</a></small>
-            </p>
-            <hr class="my-5">
-        </section>
-        -->
+      <!-- Notifications  -->
+      <section id="notifications">
+        <h3>
+          Notifications
+        </h3>
+        <p>
+          <img src="./img/notifications.png" class="img-fluid mb-3" alt="Notifications">
+          Notifications and buttons have <b>different</b> shadows. Notifications have light colors as background. Labels for notifications are the same as used in tables.
+        </p>
+        <p>
+          <small><a href="#top">Return to top</a></small>
+        </p>
+        <hr>
+      </section>
 
       <script src="./main.js"></script>
 </body>
